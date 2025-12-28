@@ -312,309 +312,209 @@ const PRODUCTS = {
     }
   ],
 
-  // Parfums de Chambre
-  chambre: [
+  // Parfums de Chambre (fusionné dans Maison)
+  // Thiouraye (fusionné dans Maison)
+  // Vêtements (supprimé)
+
+  // Parfums Maison (fusion de Chambre et Thiouraye)
+  maison: [
+    // Anciens produits chambre
     {
       id: 'chambre-1',
       name: 'Lavande Relaxante',
       price: 7500,
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-2',
       name: 'Rose Romantique',
       price: 8000,
       image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-3',
       name: 'Jasmin Serein',
       price: 6500,
       image: 'https://images.unsplash.com/photo-1592945403244-b3faa74b2c98?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-4',
       name: 'Vanille Douce',
       price: 7000,
       image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-5',
       name: 'Bergamote Fraîche',
       price: 6800,
       image: 'https://images.unsplash.com/photo-1615639164213-aab04da93c7c?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-6',
       name: 'Santal Zen',
       price: 8500,
       image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-7',
       name: 'Ambre Chaleureux',
       price: 9000,
       image: 'https://images.unsplash.com/photo-1590736969955-71cc94901354?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-8',
       name: 'Camomille Apaisante',
       price: 6200,
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-9',
       name: 'Néroli Élégant',
       price: 7800,
       image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-10',
       name: 'Vétiver Naturel',
       price: 7200,
       image: 'https://images.unsplash.com/photo-1592945403244-b3faa74b2c98?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-11',
       name: 'Musc Sensuel',
       price: 8200,
       image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-12',
       name: 'Patchouli Mystérieux',
       price: 7500,
       image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-13',
       name: 'Iris Délicat',
       price: 8800,
       image: 'https://images.unsplash.com/photo-1590736969955-71cc94901354?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
+      category: 'maison'
     },
     {
       id: 'chambre-14',
       name: 'Ylang-Ylang Exotique',
       price: 7600,
       image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=center',
-      category: 'chambre'
-    }
-  ],
-
-  // Thiouraye
-  thiouraye: [
+      category: 'maison'
+    },
+    // Anciens produits thiouraye
     {
       id: 'thiouraye-1',
       name: 'Thiouraye Ancestral',
       price: 22000,
       image: 'https://images.unsplash.com/photo-1589085279621-73e5d833b1bd?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-2',
       name: 'Thiouraye Mystique',
       price: 25000,
       image: 'https://images.unsplash.com/photo-1592945403244-b3faa74b2c98?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-3',
       name: 'Thiouraye Sacré',
       price: 28000,
       image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-4',
       name: 'Thiouraye Énergétique',
       price: 20000,
       image: 'https://images.unsplash.com/photo-1615639164213-aab04da93c7c?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-5',
       name: 'Thiouraye Purificateur',
       price: 23500,
       image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-6',
       name: 'Thiouraye Protecteur',
       price: 26000,
       image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-7',
       name: 'Thiouraye Guérisseur',
       price: 24500,
       image: 'https://images.unsplash.com/photo-1590736969955-71cc94901354?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-8',
       name: 'Thiouraye Équilibrant',
       price: 21500,
       image: 'https://images.unsplash.com/photo-1589085279621-73e5d833b1bd?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-9',
       name: 'Thiouraye Harmonisant',
       price: 27000,
       image: 'https://images.unsplash.com/photo-1592945403244-b3faa74b2c98?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-10',
       name: 'Thiouraye Vitalisant',
       price: 22500,
       image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-11',
       name: 'Thiouraye Apaisant',
       price: 19500,
       image: 'https://images.unsplash.com/photo-1615639164213-aab04da93c7c?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-12',
       name: 'Thiouraye Régénérant',
       price: 25500,
       image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-13',
       name: 'Thiouraye Nettoyant',
       price: 23000,
       image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
+      category: 'maison'
     },
     {
       id: 'thiouraye-14',
       name: 'Thiouraye Fortifiant',
       price: 26500,
       image: 'https://images.unsplash.com/photo-1590736969955-71cc94901354?w=400&h=300&fit=crop&crop=center',
-      category: 'thiouraye'
-    }
-  ],
-
-  // Vêtements
-  vetement: [
-    {
-      id: 'vetement-1',
-      name: 'Boubou Traditionnel',
-      price: 28000,
-      image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-2',
-      name: 'Kaftan Élégant',
-      price: 32000,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-3',
-      name: 'Grand Boubou',
-      price: 35000,
-      image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-4',
-      name: 'Tunique Moderne',
-      price: 25000,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-5',
-      name: 'Robe de Cérémonie',
-      price: 45000,
-      image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-6',
-      name: 'Boubou de Mariage',
-      price: 55000,
-      image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-7',
-      name: 'Kaftan de Soirée',
-      price: 38000,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-8',
-      name: 'Tunique Quotidienne',
-      price: 22000,
-      image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-9',
-      name: 'Boubou Simple',
-      price: 18000,
-      image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-10',
-      name: 'Kaftan Décontracté',
-      price: 26000,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-11',
-      name: 'Robe Élégante',
-      price: 42000,
-      image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-12',
-      name: 'Boubou Luxueux',
-      price: 48000,
-      image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-13',
-      name: 'Kaftan Royal',
-      price: 52000,
-      image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
-    },
-    {
-      id: 'vetement-14',
-      name: 'Tunique Festive',
-      price: 35000,
-      image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=300&fit=crop&crop=center',
-      category: 'vetement'
+      category: 'maison'
     }
   ]
 }; 

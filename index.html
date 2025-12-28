@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="homepage">
 
@@ -96,11 +97,11 @@
                         </a>
                     </div>
 
-                    <!-- Parfum Chambre -->
+                    <!-- Parfums Maison (Fusion Chambre & Thiouraye) -->
                     <div class="collection-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <a href="#" class="card-link" onclick="showCategory('chambre'); return false;">
+                        <a href="#" class="card-link" onclick="showCategory('maison'); return false;">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=center" alt="Parfums de Chambre" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&h=300&fit=crop&crop=center" alt="Parfums Maison" loading="lazy">
                                 <div class="card-overlay">
                                     <div class="card-icon">
                                         <i class="fas fa-home"></i>
@@ -109,49 +110,9 @@
                                 </div>
                             </div>
                             <div class="card-content">
-                                <h3 class="card-title">Parfums d'Intérieur</h3>
-                                <p class="card-description">Transformez votre espace en sanctuaire de bien-être et d'harmonie</p>
+                                <h3 class="card-title">Parfums Maison</h3>
+                                <p class="card-description">Une sélection unique de parfums d'intérieur et thiouraye traditionnel pour sublimer votre espace</p>
                                 <div class="card-price-range">À partir de 6.500 FCFA</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Thiouraye -->
-                    <div class="collection-card animate-fade-up" style="animation-delay: 0.3s;">
-                        <a href="#" class="card-link" onclick="showCategory('thiouraye'); return false;">
-                            <div class="card-image">
-                                <img src="https://i.postimg.cc/KYRMqVh8/Incense-Bundle-For-Only-N12-000-This-mini-set-will-have-your-space-smelling-incredible-Only-one-set.jpg" alt="Thiouraye" loading="lazy">
-                                <div class="card-overlay">
-                                    <div class="card-icon">
-                                        <i class="fas fa-fire"></i>
-                                    </div>
-                                    <span class="card-action">Explorer</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">Thiouraye Traditionnel</h3>
-                                <p class="card-description">L'héritage ancestral revisité avec raffinement et authenticité</p>
-                                <div class="card-price-range">À partir de 20.000 FCFA</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Vêtements -->
-                    <div class="collection-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <a href="#" class="card-link" onclick="showCategory('vetement'); return false;">
-                            <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center" alt="Vêtements" loading="lazy">
-                                <div class="card-overlay">
-                                    <div class="card-icon">
-                                        <i class="fas fa-tshirt"></i>
-                                    </div>
-                                    <span class="card-action">Explorer</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3 class="card-title">Vêtements de Luxe</h3>
-                                <p class="card-description">Créations d'exception alliant tradition africaine et modernité</p>
-                                <div class="card-price-range">À partir de 25.000 FCFA</div>
                             </div>
                         </a>
                     </div>
@@ -170,28 +131,10 @@
         </div>
     </section>
 
-    <section id="products-chambre" class="products-section" style="display: none;">
+    <section id="products-maison" class="products-section" style="display: none;">
         <div class="products-container">
-            <h2 class="section-title">Parfums d'Intérieur</h2>
-            <div id="product-grid-chambre" class="product-grid">
-                <!-- Products will be loaded dynamically from products.js -->
-            </div>
-        </div>
-    </section>
-
-    <section id="products-thiouraye" class="products-section" style="display: none;">
-        <div class="products-container">
-            <h2 class="section-title">Thiouraye Traditionnel</h2>
-            <div id="product-grid-thiouraye" class="product-grid">
-                <!-- Products will be loaded dynamically from products.js -->
-            </div>
-        </div>
-    </section>
-
-    <section id="products-vetement" class="products-section" style="display: none;">
-        <div class="products-container">
-            <h2 class="section-title">Vêtements de Luxe</h2>
-            <div id="product-grid-vetement" class="product-grid">
+            <h2 class="section-title">Parfums Maison</h2>
+            <div id="product-grid-maison" class="product-grid">
                 <!-- Products will be loaded dynamically from products.js -->
             </div>
         </div>
@@ -375,9 +318,7 @@
                 <h4>Nos Collections</h4>
                 <ul>
                     <li><a href="#" onclick="showCategory('corporel'); return false;">Parfums Corporels</a></li>
-                    <li><a href="#" onclick="showCategory('chambre'); return false;">Parfums d'Intérieur</a></li>
-                    <li><a href="#" onclick="showCategory('thiouraye'); return false;">Thiouraye Traditionnel</a></li>
-                    <li><a href="#" onclick="showCategory('vetement'); return false;">Vêtements de Luxe</a></li>
+                    <li><a href="#" onclick="showCategory('maison'); return false;">Parfums Maison</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -399,9 +340,7 @@
         // Category titles mapping
         const categoryTitles = {
             'corporel': 'Parfums Corporels',
-            'chambre': 'Parfums d\'Intérieur',
-            'thiouraye': 'Thiouraye Traditionnel',
-            'vetement': 'Vêtements de Luxe'
+            'maison': 'Parfums Maison'
         };
 
         // Show category products
@@ -440,6 +379,12 @@
             document.querySelectorAll('.products-section').forEach(section => {
                 section.style.display = 'none';
             });
+
+            // Close cart modal if open
+            const cartModal = document.getElementById('cart-modal');
+            if (cartModal) {
+                cartModal.classList.add('hidden');
+            }
 
             // Show homepage sections
             document.getElementById('homepage-sections').style.display = 'block';
@@ -578,6 +523,19 @@
                 showHomePage();
             }
         });
+    </script>
+
+    <!-- Netlify Identity - Redirection vers admin après connexion -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
     </script>
 </body>
 </html>

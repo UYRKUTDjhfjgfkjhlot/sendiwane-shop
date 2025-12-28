@@ -387,27 +387,56 @@ class ShoppingCart {
     showAddedAnimation(button) {
       const icon = button.querySelector('i');
       if (!icon) return;
-      const originalClass = icon.className;
+
+      // Reset state if animation is already running
+      if (button.dataset.animTimeout) {
+        clearTimeout(parseInt(button.dataset.animTimeout));
+        const originalClass = button.dataset.originalIconClass;
+        if (originalClass) icon.className = originalClass;
+        button.classList.remove('added', 'btn-success');
+        button.style.backgroundColor = '';
+        button.style.color = '';
+        button.style.transform = '';
+        button.style.transition = '';
+      }
+
+      // Store original class
+      if (!button.dataset.originalIconClass) {
+        button.dataset.originalIconClass = icon.className;
+      }
+      const originalClass = button.dataset.originalIconClass;
+
+      // Force reflow
+      void button.offsetWidth;
+
+      // Start animation
       icon.className = 'fas fa-check';
       button.classList.add('added', 'btn-success');
       button.style.backgroundColor = '#28a745';
       button.style.color = 'white';
       button.style.transform = 'scale(1.05)';
       button.style.transition = 'all 0.3s ease';
+      
       setTimeout(() => {
         button.style.transform = 'scale(1.1)';
       }, 150);
+      
       setTimeout(() => {
         button.style.transform = 'scale(1.05)';
       }, 300);
-      setTimeout(() => {
+      
+      const timeoutId = setTimeout(() => {
         icon.className = originalClass;
         button.classList.remove('added', 'btn-success');
         button.style.backgroundColor = '';
         button.style.color = '';
         button.style.transform = '';
         button.style.transition = '';
-      }, 2000);
+        delete button.dataset.animTimeout;
+        delete button.dataset.originalIconClass;
+      }, 1000);
+
+      button.dataset.animTimeout = timeoutId.toString();
     }
   
     formatPrice(price) {
@@ -493,12 +522,19 @@ class ShoppingCart {
   // Helper function to get category from product ID
   function getCategoryFromId(productId) {
     if (productId.startsWith('corporel')) return 'corporel';
-    if (productId.startsWith('chambre')) return 'chambre';
-    if (productId.startsWith('thiouraye')) return 'thiouraye';
-    if (productId.startsWith('vetement')) return 'vetement';
+    if (productId.startsWith('chambre')) return 'maison'; // Mappé vers maison
+    if (productId.startsWith('thiouraye')) return 'maison'; // Mappé vers maison
+    if (productId.startsWith('vetement')) return 'vetement'; // Supprimé mais gardé au cas où
     if (productId.startsWith('parfum')) return 'corporel'; // Default to corporel for generic parfums
     return 'corporel';
   }
+
+  // Global function to load products (wrapper for cart.loadProducts)
+  window.loadProductsForCategory = function(category) {
+      if (window.cart) {
+          window.cart.loadProducts(category);
+      }
+  };
   
   // Add fade-in animation to elements as they come into view
   const observeElements = () => {

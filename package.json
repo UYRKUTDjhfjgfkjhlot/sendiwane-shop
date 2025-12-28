@@ -1,0 +1,21 @@
+{
+  "name": "sen-diwane-touhfatou",
+  "version": "1.0.0",
+  "description": "Site e-commerce Sen Diwane Touhfatou avec administration Decap CMS",
+  "scripts": {
+    "import-products": "node admin/import-from-js.js",
+    "export-products": "node admin/convert-to-js.js",
+    "cms": "decap-server"
+  },
+  "keywords": [
+    "ecommerce",
+    "decap-cms",
+    "netlify"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "decap-server": "^1.0.0"
+  }
+}
+

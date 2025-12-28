@@ -1,0 +1,22 @@
+# Dépendances
+node_modules/
+
+# Fichiers de build
+dist/
+build/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'administration (optionnel - décommentez si vous ne voulez pas versionner les données)
+# admin/data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables d'environnement
+.env
+.env.local
+
