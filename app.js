@@ -502,19 +502,15 @@ function findProductById(productId) {
     return null;
 }
 
-// Fetch products from JSON files
+// Fetch products from aggregated JSON file
 async function fetchAndInitializeProducts() {
   try {
-    const response = await fetch('data/products_index.json');
+    const response = await fetch('data/products.json');
     if (!response.ok) {
-        console.warn('Products index not found. Ensure generate_index.js has been run.');
+        console.warn('Products file not found. Ensure generate_index.js has been run.');
         return;
     }
-    const files = await response.json();
-    
-    // Fetch all product files
-    const promises = files.map(file => fetch(file).then(r => r.json()));
-    const products = await Promise.all(promises);
+    const products = await response.json();
     
     // Clear existing
     window.PRODUCTS = { corporel: [], maison: [] };

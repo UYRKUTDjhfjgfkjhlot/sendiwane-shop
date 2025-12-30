@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Site e-commerce Sen Diwane Touhfatou",
   "scripts": {
-    "start": "echo 'Site is running'"
+    "start": "echo 'Site is running'",
+    "build": "node scripts/generate_index.js"
   },
   "keywords": [
     "ecommerce",

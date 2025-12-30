@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const productsDir = path.join(__dirname, '../data/produits');
-const outputFile = path.join(__dirname, '../data/products_index.json');
+const outputFile = path.join(__dirname, '../data/products.json');
 
 // Ensure directory exists
 if (!fs.existsSync(productsDir)) {
@@ -12,13 +12,17 @@ if (!fs.existsSync(productsDir)) {
 
 try {
   const files = fs.readdirSync(productsDir)
-    .filter(file => file.endsWith('.json'))
-    .map(file => `data/produits/${file}`);
+    .filter(file => file.endsWith('.json'));
 
-  fs.writeFileSync(outputFile, JSON.stringify(files, null, 2));
-  console.log('Index created successfully:', outputFile);
-  console.log('Files found:', files.length);
+  const allProducts = files.map(file => {
+    const content = fs.readFileSync(path.join(productsDir, file), 'utf8');
+    return JSON.parse(content);
+  });
+
+  fs.writeFileSync(outputFile, JSON.stringify(allProducts, null, 2));
+  console.log('Aggregated products file created successfully:', outputFile);
+  console.log('Total products:', allProducts.length);
 } catch (error) {
-  console.error('Error creating index:', error);
+  console.error('Error creating aggregated index:', error);
   process.exit(1);
 }
