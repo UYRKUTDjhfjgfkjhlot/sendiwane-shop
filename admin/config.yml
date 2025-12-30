@@ -8,7 +8,7 @@ public_folder: "/images"
 collections:
   - name: "produits"
     label: "Produits"
-    folder: "admin/data/produits"
+    folder: "data/produits"
     create: true
     slug: "{{slug}}"
     format: "json"
@@ -17,4 +17,4 @@ collections:
       - { label: "Nom", name: "name", widget: "string", required: true }
       - { label: "Prix", name: "price", widget: "number", value_type: "int", required: true }
       - { label: "Image", name: "image", widget: "image", required: false }
-      - { label: "Catégorie", name: "category", widget: "select", options: ["corporel", "chambre", "thiouraye", "vetement"], required: true }
+      - { label: "Catégorie", name: "category", widget: "select", options: ["corporel", "maison"], required: true }
